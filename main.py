@@ -66,15 +66,6 @@ async def on_member_join(membro: dc.Member):
     minha_embed.set_image(url='attachment://welcome.jpg')
 
     await canal.send(embed=minha_embed, file=img)
-    
-    
-
-# @bot.event
-# async def on_reaction_add(reacao:dc.Reaction, membro:dc.Member):
-#     if membro.id == 754802422316269639:
-#         await reacao.message.reply(f'O sigma, criador do servidor {membro.mention} reagiu a mensagem com "{reacao.emoji}"')
-#     else:
-#         await reacao.message.reply(f'O Viado do {membro.mention} reagiu a mensagem com "{reacao.emoji}"')
 
 @bot.command()
 async def whisky(ctx: commands.Context):
